@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ElectronicRoulette: Código-Fonte de lib/ElectronicRoulette/ElectronicRoulette.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icons8-roleta-50.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ElectronicRoulette
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Roleta eletrônica</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_1d6e82dd65b66644f1470000e6dfb9a4.html">ElectronicRoulette</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ElectronicRoulette.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_electronic_roulette_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef __ELECTRONICROULETTE__H__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define __ELECTRONICROULETTE__H__</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bits__effects_8h.html">bits_effects.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define DELAY_MIN 0                     </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a28688b64c7452eb7221b9a582733768c">   19</a></span>&#160;<span class="preprocessor">#define DELAY_MAX 250                   </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a284b5caa4788a9db4760eebb30bf6a74">   20</a></span>&#160;<span class="preprocessor">#define DEFAULT_LED_COUNT 8             </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a5a88a082b5b6670c83c9984c5b33f042">   21</a></span>&#160;<span class="preprocessor">#define DEFAULT_INITIAL_SPEED 80        </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a99876fd1c0ba6a60a3031b6a29aa116a">   22</a></span>&#160;<span class="preprocessor">#define DEFAULT_BT_RDY_PIN 2            </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a2ccf5267baebbf8abf511302cce122ba">   23</a></span>&#160;<span class="preprocessor">#define DEFAULT_BT_START_PIN 3          </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a75f6568992e9adbe22c74a4251c91a43">   24</a></span>&#160;<span class="preprocessor">#define DEFAULT_BUZ_PIN 13              </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a0561d46d425fe66d42c8d655f28dd091">   25</a></span>&#160;<span class="preprocessor">#define DEFAULT_INITIAL_PIN 4           </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#ae2eb1dca98b3b3ef3fdf20a4042527b3">   26</a></span>&#160;<span class="preprocessor">#define DEFAULT_DECELERATION 3          </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a06c74e146a869bd1d42285b3353aab09">   27</a></span>&#160;<span class="preprocessor">#define DEFAULT_STOP 250                </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a23cb14b2dc8c467554502401c9201ea5">   28</a></span>&#160;<span class="preprocessor">#define DEFAULT_LIST_SIZE 24            </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#ad148df91512c39e1e60c382595741ab3">   29</a></span>&#160;<span class="preprocessor">#define DEFAULT_BUZZER_DURATION 20      </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a18c6cec6d96d81c13dc451842abc6884">   30</a></span>&#160;<span class="preprocessor">#define DEFAULT_BUZZER_TONE 500         </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#a24d39b348f76042ae40c166b34c33e21">   31</a></span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896">   35</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896">ElectronicRouletteState</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896ac32b2b265eef91b3005187d235c2cfd6">   37</a></span>&#160;    <a class="code" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896ac32b2b265eef91b3005187d235c2cfd6">ST_IDLE</a>,          </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896a1d8be9b7af4ef56e2177e6598388c8b4">   38</a></span>&#160;    <a class="code" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896a1d8be9b7af4ef56e2177e6598388c8b4">ST_READY</a>,         </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896a1b786e2e4786d475f5f0ef0064f50e92">   39</a></span>&#160;    <a class="code" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896a1b786e2e4786d475f5f0ef0064f50e92">ST_DRAWING</a>,       </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896aff8d655c1c1e30cfa4b0a63ebc9c381e">ST_DRAWN</a>          </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896aff8d655c1c1e30cfa4b0a63ebc9c381e">   41</a></span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_electronic_roulette.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_electronic_roulette.html">ElectronicRoulette</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896">ElectronicRouletteState</a> state;                  </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    uint32_t ledsStatus;                            </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    uint32_t maxLedsStatus;                         </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    uint8_t ledsCount;                              </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    uint8_t speed;                                  </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    uint16_t time;                                  </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    uint8_t initialPin;                             </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    uint8_t buttonReadyPin;                         </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    uint8_t buttonStartRoulettePin;                 </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    uint8_t selectedLed;                            </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    uint8_t deceleration;                           </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    uint16_t stopDeceleration;                      </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    uint8_t listIdx;                                </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    uint8_t buzzerPin;                              </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    uint16_t buzzerTone;                            </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    uint8_t buzzerToneDuration;                     </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    uint8_t numbersList[<a class="code" href="_electronic_roulette_8h.html#ad148df91512c39e1e60c382595741ab3">DEFAULT_LIST_SIZE</a>];         </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> effects();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> updateLeds();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> turnOff();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> randomizeNumbersList();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> drawing();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> flashSelectedLed();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="class_electronic_roulette.html#af89f468ee5064f4acfd972f7e2916269">ElectronicRoulette</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a0fb0d28ba16917a923c216f18e1db028">begin</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a6f64e6959314c300f2cca4449f18c565">task</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a0ea632c4698460815730f509e63d09d6">setInitialLedsPins</a>(uint8_t initialPin);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a3d75646b37688943ebd7dfb876cd74bc">setLedCount</a>(uint8_t ledCount);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a1ddd2ac23c983b082908aeaf825f41c8">setSpeed</a>(uint8_t speed);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a8de41b5a2918b1613e8addb558c7317e">setBuzzerTone</a>(uint16_t tone);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a59bcfef5af2377846219b199656b72d6">setBuzzerDuration</a>(uint8_t duration);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a647dca116903100a41d7fae10c3fd92f">setDeceleration</a>(uint8_t deceleration);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a9c3c0859791da7b7131e4481525f5676">setDuration</a>(uint8_t duration);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a94bcaa7e88753a8347e8e465e7be92a5">setNumbersList</a>(uint8_t numbersList[24]);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#aa2da28450be9a4aa59e98b1154e24d0f">test</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_electronic_roulette.html#a54595a88a2770f472c7f85e9beb94d50">printLedsStatus</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif  </span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_electronic_roulette_html_a0ea632c4698460815730f509e63d09d6"><div class="ttname"><a href="class_electronic_roulette.html#a0ea632c4698460815730f509e63d09d6">ElectronicRoulette::setInitialLedsPins</a></div><div class="ttdeci">void setInitialLedsPins(uint8_t initialPin)</div><div class="ttdoc">Define o pino do primeiro led da cadeia de leds da roleta.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:144</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a1ddd2ac23c983b082908aeaf825f41c8"><div class="ttname"><a href="class_electronic_roulette.html#a1ddd2ac23c983b082908aeaf825f41c8">ElectronicRoulette::setSpeed</a></div><div class="ttdeci">void setSpeed(uint8_t speed)</div><div class="ttdoc">Define a velocidade da roleta.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:163</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a9c3c0859791da7b7131e4481525f5676"><div class="ttname"><a href="class_electronic_roulette.html#a9c3c0859791da7b7131e4481525f5676">ElectronicRoulette::setDuration</a></div><div class="ttdeci">void setDuration(uint8_t duration)</div><div class="ttdoc">Define por quanto tempo a roleta permanece em movimento.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:211</div></div>
+<div class="ttc" id="a_electronic_roulette_8h_html_afe467a849012f7e01bca7b2f190e0896ac32b2b265eef91b3005187d235c2cfd6"><div class="ttname"><a href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896ac32b2b265eef91b3005187d235c2cfd6">ST_IDLE</a></div><div class="ttdeci">@ ST_IDLE</div><div class="ttdoc">Aguardando comando, reproduzindo efeitos nos leds.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.h:37</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a0fb0d28ba16917a923c216f18e1db028"><div class="ttname"><a href="class_electronic_roulette.html#a0fb0d28ba16917a923c216f18e1db028">ElectronicRoulette::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Inicializa a roleta eletrônica.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:83</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_aa2da28450be9a4aa59e98b1154e24d0f"><div class="ttname"><a href="class_electronic_roulette.html#aa2da28450be9a4aa59e98b1154e24d0f">ElectronicRoulette::test</a></div><div class="ttdeci">void test()</div><div class="ttdoc">Realiza o teste da roleta.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:314</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a647dca116903100a41d7fae10c3fd92f"><div class="ttname"><a href="class_electronic_roulette.html#a647dca116903100a41d7fae10c3fd92f">ElectronicRoulette::setDeceleration</a></div><div class="ttdeci">void setDeceleration(uint8_t deceleration)</div><div class="ttdoc">Define a intensidade de desaceleração da roleta.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:202</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a6f64e6959314c300f2cca4449f18c565"><div class="ttname"><a href="class_electronic_roulette.html#a6f64e6959314c300f2cca4449f18c565">ElectronicRoulette::task</a></div><div class="ttdeci">void task()</div><div class="ttdoc">Executa as rotinas da roleta eletrônica.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:119</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a3d75646b37688943ebd7dfb876cd74bc"><div class="ttname"><a href="class_electronic_roulette.html#a3d75646b37688943ebd7dfb876cd74bc">ElectronicRoulette::setLedCount</a></div><div class="ttdeci">void setLedCount(uint8_t ledCount)</div><div class="ttdoc">Define a quantidade de leds da roleta.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:153</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a59bcfef5af2377846219b199656b72d6"><div class="ttname"><a href="class_electronic_roulette.html#a59bcfef5af2377846219b199656b72d6">ElectronicRoulette::setBuzzerDuration</a></div><div class="ttdeci">void setBuzzerDuration(uint8_t duration)</div><div class="ttdoc">Define a duração do tom do buzzer.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:193</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a8de41b5a2918b1613e8addb558c7317e"><div class="ttname"><a href="class_electronic_roulette.html#a8de41b5a2918b1613e8addb558c7317e">ElectronicRoulette::setBuzzerTone</a></div><div class="ttdeci">void setBuzzerTone(uint16_t tone)</div><div class="ttdoc">Defini o tom do buzzer.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:184</div></div>
+<div class="ttc" id="abits__effects_8h_html"><div class="ttname"><a href="bits__effects_8h.html">bits_effects.h</a></div><div class="ttdoc">Biblioteca para controlar efeitos utilizando deslocamento de bits.</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a54595a88a2770f472c7f85e9beb94d50"><div class="ttname"><a href="class_electronic_roulette.html#a54595a88a2770f472c7f85e9beb94d50">ElectronicRoulette::printLedsStatus</a></div><div class="ttdeci">void printLedsStatus()</div><div class="ttdoc">Imprime o estado dos leds.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:350</div></div>
+<div class="ttc" id="a_electronic_roulette_8h_html_afe467a849012f7e01bca7b2f190e0896aff8d655c1c1e30cfa4b0a63ebc9c381e"><div class="ttname"><a href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896aff8d655c1c1e30cfa4b0a63ebc9c381e">ST_DRAWN</a></div><div class="ttdeci">@ ST_DRAWN</div><div class="ttdoc">Sorteio realizado. Aguardando comando.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.h:40</div></div>
+<div class="ttc" id="a_electronic_roulette_8h_html_ad148df91512c39e1e60c382595741ab3"><div class="ttname"><a href="_electronic_roulette_8h.html#ad148df91512c39e1e60c382595741ab3">DEFAULT_LIST_SIZE</a></div><div class="ttdeci">#define DEFAULT_LIST_SIZE</div><div class="ttdoc">Valor padrão para o tamanho da lista dos numeros sorteados.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.h:28</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_af89f468ee5064f4acfd972f7e2916269"><div class="ttname"><a href="class_electronic_roulette.html#af89f468ee5064f4acfd972f7e2916269">ElectronicRoulette::ElectronicRoulette</a></div><div class="ttdeci">ElectronicRoulette()</div><div class="ttdoc">Constrói um novo objeto Electronic Roulette:: Electronic Roulette.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:58</div></div>
+<div class="ttc" id="a_electronic_roulette_8h_html_afe467a849012f7e01bca7b2f190e0896"><div class="ttname"><a href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896">ElectronicRouletteState</a></div><div class="ttdeci">ElectronicRouletteState</div><div class="ttdoc">Estados da roleta eletrônica.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.h:36</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html_a94bcaa7e88753a8347e8e465e7be92a5"><div class="ttname"><a href="class_electronic_roulette.html#a94bcaa7e88753a8347e8e465e7be92a5">ElectronicRoulette::setNumbersList</a></div><div class="ttdeci">void setNumbersList(uint8_t numbersList[24])</div><div class="ttdoc">Define a lista de números a serem sorteados.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.cpp:172</div></div>
+<div class="ttc" id="a_electronic_roulette_8h_html_afe467a849012f7e01bca7b2f190e0896a1d8be9b7af4ef56e2177e6598388c8b4"><div class="ttname"><a href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896a1d8be9b7af4ef56e2177e6598388c8b4">ST_READY</a></div><div class="ttdeci">@ ST_READY</div><div class="ttdoc">Aguardando comando, leds apagados.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.h:38</div></div>
+<div class="ttc" id="aclass_electronic_roulette_html"><div class="ttname"><a href="class_electronic_roulette.html">ElectronicRoulette</a></div><div class="ttdoc">Classe principal da roleta eletrônica.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.h:47</div></div>
+<div class="ttc" id="a_electronic_roulette_8h_html_afe467a849012f7e01bca7b2f190e0896a1b786e2e4786d475f5f0ef0064f50e92"><div class="ttname"><a href="_electronic_roulette_8h.html#afe467a849012f7e01bca7b2f190e0896a1b786e2e4786d475f5f0ef0064f50e92">ST_DRAWING</a></div><div class="ttdeci">@ ST_DRAWING</div><div class="ttdoc">Realizando sorteio.</div><div class="ttdef"><b>Definition:</b> ElectronicRoulette.h:39</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

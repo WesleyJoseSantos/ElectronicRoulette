@@ -1,0 +1,2 @@
+O arquivo de código compatível com o Arduino IDE está dentro da pasta "arduino". Basta abrir o arquivo "arduino.ino" e enviar o código para a placa normalmente.
+A documentação completa do código, em html e pdf se encontra dentro da pasta doc.
