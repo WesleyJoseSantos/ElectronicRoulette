@@ -231,7 +231,9 @@ void ElectronicRoulette::effects(){
  * 
  */
 void ElectronicRoulette::updateLeds(){
-    if(this->ledsStatus != 0) tone(this->buzzerPin, this->buzzerTone, this->buzzerToneDuration);
+    if(this->ledsStatus != 0 && this->state != ElectronicRouletteState::ST_IDLE){
+        tone(this->buzzerPin, this->buzzerTone, this->buzzerToneDuration);
+    }
     for (size_t i = 0; i < ledsCount; i++)
     {
         uint8_t pin = this->initialPin + i;
